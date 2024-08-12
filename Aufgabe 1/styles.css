@@ -1,5 +1,12 @@
+body
+{
+    background-color: #ffeccf;
+}
+
 button 
 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16;
     background-color: #fcba03;
     color: #20224d;
     border-radius: 5px;
@@ -8,7 +15,34 @@ button
     transition:all .3s ease-in-out;
     cursor: pointer;
     margin: 20px;
+    width: 100;
+    height: 50;
 }
+
+h1
+{
+    color: #20224d;
+    font-size: 48;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h2
+{
+    color: #20224d;
+    font-size: 36;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
 button:hover
 {
