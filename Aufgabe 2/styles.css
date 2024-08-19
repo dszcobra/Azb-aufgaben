@@ -1,0 +1,105 @@
+body {
+    background-color:beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    padding-left: 6.58%;
+    padding-right: 6.58%;
+    padding-top: 13.16%;
+    padding-bottom: 13.16%;
+    column-gap: 2.63%;
+    row-gap: 1.33%;
+    width: 40vh;   
+    height: 80vh;
+    border: 0.5vh solid cyan;
+    border-radius: 6vh;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    padding-top: 46.05%;
+    padding-right: 6.58%;
+    padding-bottom: 6.58%;
+    font-size: 6vh;
+    text-align: center;
+    color: rgb(254, 254, 254);
+    text-align: right;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.blackitem {
+    background-color: rgba(51, 51, 51 );
+    font-size: 4vh;
+    text-align: center;
+    padding-top: 25%;
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
+    cursor: pointer;
+}
+
+.greyitem {
+    background-color: rgb(165, 165, 165);
+    font-size: 4vh;
+    text-align: center;
+    padding-top: 25%;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+}
+
+.reditem {
+    background-color: rgba(247, 162, 43);
+    font-size: 4vh;
+    text-align: center;
+    padding-top: 25%;
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
+    cursor: pointer;
+}
+
+.wideblackitem {
+    background-color: rgba(51, 51, 51 );
+    color: rgb(254, 254, 254);
+    font-size: 4vh;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 12.5%;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    cursor: pointer;
+}
+
+.greyitem:hover {
+    background-color: white;
+}
+
+.blackitem:hover {
+    background-color: grey;
+}
+
+.wideblackitem:hover {
+    background-color: grey;
+}
+
+.reditem:hover {
+    background-color: #fcd179
+}
