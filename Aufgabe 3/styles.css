@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    user-select: none;
+    background-color: beige;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 15% 10% 80%;
+    background-color: rgb(44, 44, 44);
+    font-size: 4vh;
+    width: 100vh;
+    height: 80vh;
+    text-align: center;
+    color: black;
+    grid-column-start: 2;
+    overflow: hidden;
+    box-shadow: 0.5em 0.5em 1em rgb(0 0 0 / 60%); 
+}
+
+.taskbox {
+    margin-top: 5vh;
+    background-color: rgb(150, 150, 150);
+    padding-top: 1vh;
+    text-align: center;
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-right: 5vh;
+}
+
+#input {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 2.5vh;
+    width: 80vh;
+    height: 5vh;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0.3em 0.3em 1em rgba(245, 245, 245, 40%); 
+    outline: none;
+}
+
+.taskItem {
+    display: flex;
+    background-color: whitesmoke;
+    font-size: 2.5vh;
+    width: 70vh;  
+    height: 5vh;
+    line-height: 5vh;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    vertical-align: middle;
+    margin-bottom: 2vh;
+    box-shadow: 0.2em 0.2em 0.5em rgb(0 0 0 / 60%); 
+}
+
+h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 4vh;
+    color: whitesmoke;
+}
+
+.task-controls div {
+    display: inline-block;
+    width: 5vh;
+    height: 5vh;
+    font-size: 2.5vh;
+    line-height: 5vh;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+    box-shadow: 0.2em 0.2em 0.5em rgb(0 0 0 / 60%);  
+}
+
+.task-controls .delete {
+    background-color: lightcoral;
+}
+
+.task-controls .edit {
+    background-color: lightblue;
+}
+
+.task-controls .complete {
+    background-color: rgb(206, 255, 206);
+}
+.task-controls .back {
+    background-color: rgb(214, 170, 255);
+}
+
+.taskItem, .task-controls {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.newItem {
+    background-color: lightgreen;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 5vh;
+    width: 5vh;
+    height: 5vh;
+    color: black;
+    cursor: pointer;
+    grid-row: 2;
+    grid-column: 2;
+    margin-left: 75vh;
+    box-shadow: 0.3em 0.3em 1em rgba(245, 245, 245, 40%); 
+}
+
+.nextPage {
+    background-color: rgb(239, 255, 167);
+    border-radius: 50px;
+    font-size: 3vh;
+    line-height: 5vh;
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 1;
+    margin: 2.5vh;
+    box-shadow: 0.3em 0.3em 1em rgba(245, 245, 245, 40%); 
+}
+
+.newItem:hover {
+    background-color: lightgrey;
+}
+
+.task-controls div:hover {
+    background-color: lightgrey;
+}
+
+.taskbox::-webkit-scrollbar {
+    display: none; 
+}
