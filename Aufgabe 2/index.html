@@ -1,35 +1,35 @@
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="center">
-                <div class="grid-container" id="grid">
-                    <div class="number" id="score">0</div>
-                    <div class="greyitem" id="clear">C</div>
-                    <div class="greyitem" id="sign">-/+</div>
-                    <div class="greyitem" id="percent">%</div>
-                    <div class="reditem" id="divide">/</div>
-                    <div class="blackitem" id="seven">7</div>
-                    <div class="blackitem" id="eight">8</div>
-                    <div class="blackitem" id="nine">9</div>
-                    <div class="reditem" id="multiply">x</div>
-                    <div class="blackitem" id="four"four>4</div>
-                    <div class="blackitem" id="five">5</div>
-                    <div class="blackitem" id="six">6</div>
-                    <div class="reditem" id="minus">-</div>
-                    <div class="blackitem" id="one">1</div>
-                    <div class="blackitem" id="two">2</div>
-                    <div class="blackitem" id="three">3</div>
-                    <div class="reditem" id="plus">+</div>
-                    <div class="wideblackitem" id="zero">0</div>
-                    <div class="blackitem" id="comma">,</div>
-                    <div class="reditem" id="equals">=</div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="center">
+        <div class="grid-container" id="grid">
+            <div class="number" id="score">0</div>
+            <div class="greyitem" data-action="clear">C</div>
+            <div class="greyitem" data-action="toggleSign">-/+</div>
+            <div class="greyitem" data-action="applyPercent">%</div>
+            <div class="reditem" data-action="handleArithmetic" data-value="/">/</div>
+            <div class="blackitem" data-action="handleNumber" data-value="7">7</div>
+            <div class="blackitem" data-action="handleNumber" data-value="8">8</div>
+            <div class="blackitem" data-action="handleNumber" data-value="9">9</div>
+            <div class="reditem" data-action="handleArithmetic" data-value="*">x</div>
+            <div class="blackitem" data-action="handleNumber" data-value="4">4</div>
+            <div class="blackitem" data-action="handleNumber" data-value="5">5</div>
+            <div class="blackitem" data-action="handleNumber" data-value="6">6</div>
+            <div class="reditem" data-action="handleArithmetic" data-value="-">-</div>
+            <div class="blackitem" data-action="handleNumber" data-value="1">1</div>
+            <div class="blackitem" data-action="handleNumber" data-value="2">2</div>
+            <div class="blackitem" data-action="handleNumber" data-value="3">3</div>
+            <div class="reditem" data-action="handleArithmetic" data-value="+">+</div>
+            <div class="wideblackitem" data-action="handleNumber" data-value="0">0</div>
+            <div class="blackitem" data-action="handleNumber" data-value=".">,</div>
+            <div class="reditem" data-action="equals">=</div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
