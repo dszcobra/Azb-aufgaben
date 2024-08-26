@@ -1,0 +1,32 @@
+/*  color palettes
+    #6482AD mid blue
+    #7FA1C3 light blue
+    #E2DAD6 light grey
+    #F5EDED baby
+*/
+
+html {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F5EDED;
+}
+
+h1 {
+    font-size: 60px;
+    color:#6482AD;
+    margin: 50px 0px 0px 50px;
+    /* margin: top, right, left, bottom */
+}
+
+p {
+    color: #7FA1C3;
+    margin: 150px 0px 0px 100px;
+}
+
+button {
+    color: white;
+    background-color:#6482AD;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px 0px 0px 100px;
+}
