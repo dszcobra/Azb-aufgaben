@@ -15,16 +15,16 @@ window.onload = function() {
     loadTasks();
 
     function createButton(className, textContent) {
-        let button = document.createElement("div");
+        let button = document.createElement("button");
         button.className = className;
         button.textContent = textContent;
         return button;
     }
 
     function addTasks(value, key) {
-        let listItem = document.createElement("div");
-        let controls = document.createElement("div");
-        let container = document.createElement("div");
+        let listItem = document.createElement("li");
+        let controls = document.createElement("li");
+        let container = document.createElement("li");
         listItem.className = "taskItem";
         controls.className = "task-controls";
         listItem.textContent = value;

@@ -5,6 +5,10 @@ body {
     background-color: beige;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .grid-container {
     display: flex;
     justify-content: center;
@@ -73,7 +77,8 @@ h1 {
     color: whitesmoke;
 }
 
-.task-controls div {
+.task-controls button {
+    border: none;
     display: inline-block;
     width: 5vh;
     height: 5vh;
@@ -125,6 +130,7 @@ h1 {
 
 .nextPage {
     background-color: rgb(239, 255, 167);
+    border: none;
     border-radius: 50px;
     font-size: 3vh;
     line-height: 5vh;
