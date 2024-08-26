@@ -22,8 +22,8 @@ window.onload = function() {
     }
 
     function addTasks(value, key) {
-        let listItem = document.createElement("li");
-        let controls = document.createElement("li");
+        let listItem = document.createElement("div");
+        let controls = document.createElement("div");
         let container = document.createElement("li");
         listItem.className = "taskItem";
         controls.className = "task-controls";
