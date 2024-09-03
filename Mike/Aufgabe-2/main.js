@@ -31,32 +31,37 @@ window.addEventListener("load", function () {
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       input = this.innerText;
-      if (input != null && isNaN(input)) {
-        switch (input) {
-          case "AC":
-            actionClear();
-            break;
-          case "DEL":
-            actionDelete();
-            break;
-          case ".":
-            addDecimal();
-            break;
-          case "=":
-            actionCalculation();
-            break;
-          default:
-            operator = input;
-            isOperatorSelected = true;
-            outputValues();
-            console.log("Type of input:", typeof input);
-            inset(this);
-            isInset = true;
-            break;
-        }
+
+      if (isOperatorSelected === true && operator === "/" && input === "0") {
+        output.innerHTML = 0;
       } else {
-        setValues();
-        outputValues();
+        if (input != null && isNaN(input)) {
+          switch (input) {
+            case "AC":
+              actionClear();
+              break;
+            case "DEL":
+              actionDelete();
+              break;
+            case ".":
+              addDecimal();
+              break;
+            case "=":
+              actionCalculation();
+              break;
+            default:
+              operator = input;
+              isOperatorSelected = true;
+              outputValues();
+              console.log("Type of input:", typeof input);
+              inset(this);
+              isInset = true;
+              break;
+          }
+        } else {
+          setValues();
+          outputValues();
+        }
       }
     });
 
@@ -99,6 +104,7 @@ window.addEventListener("load", function () {
       }
       output.innerHTML = result;
       outset();
+      numbers1 = result;
     }
 
     function setValues() {
@@ -119,6 +125,5 @@ window.addEventListener("load", function () {
         output.innerHTML = allNums;
       }
     }
-    
   });
 });
