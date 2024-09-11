@@ -117,8 +117,7 @@ window.addEventListener("load", function () {
 
     function outputValues() {
       if (operator != null) {
-        let numsAndOp =
-          numbers1.join("") + " " + operator + " " + numbers2.join("");
+        let numsAndOp = `${numbers1.join("")} ${operator} ${numbers2.join("")}`;
         output.innerHTML = numsAndOp;
       } else {
         allNums = numbers2.concat(numbers1).join("");
