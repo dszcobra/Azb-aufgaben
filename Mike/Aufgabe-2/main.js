@@ -53,7 +53,6 @@ window.addEventListener("load", function () {
               operator = input;
               isOperatorSelected = true;
               outputValues();
-              console.log("Type of input:", typeof input);
               inset(this);
               isInset = true;
               break;
@@ -80,7 +79,6 @@ window.addEventListener("load", function () {
     function actionDelete() {
       const arrayNums = numbers1.concat(numbers2);
       arrayNums.pop();
-      console.log(numbers1.concat(numbers2), arrayNums);
       output.innerHTML = arrayNums.join("");
     }
 
