@@ -1,0 +1,26 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="grid-container" id="gridContainer">
+        <h1 id="weatherHeadline">Wetter in</h1>
+        <div class="headline-container" id="headlineContainer">
+            <input type="textarea" id="cityInputField" placeholder="...">
+            <button class="search-button" id="searchButton">&#x1F50E;&#xFE0E;</button>
+        </div>
+        <div class="box-base box1" id="infoBox1" style="visibility: hidden"></div>
+        <div class="box-base box2" id="infoBox2" style="visibility: hidden"></div>
+        <div class="box-base box3" id="infoBox3" style="visibility: hidden"></div>
+        <div class="slide-container" style="visibility: hidden">
+            <input type="range" min="0" max="23" value="0" class="slider" id="forecastSlider" style="visibility: hidden">
+            <span id="forecastSliderTitle"></span>
+        </div>
+        <div class="box-base box4" id="infoBox4" style="visibility: hidden"></div>
+    </div>
+</body>
+</html>
