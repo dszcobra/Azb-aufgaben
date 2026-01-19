@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      A3: Todo Liste & localStorage
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="main.js">
+    </script>
+  </head>
+  <body>
+    <div id="h1">
+      <h1>
+        FleXboX<br/>
+      </h1>
+      <h1>To-Do Liste
+      </h1>
+    </div>
+      <!-- 1st items rect -->
+      <div class="rectangle">
+        <div class="container">
+          <div class="item" id="item-1-create">
+            <button class="button" type="button" id="button-clear">
+              <img class="" id="icon-clear" src="./icons/clear.svg"/>
+            </button>
+            <input
+              type="text"
+              id="input-text"
+              name="input-text"
+              value="Neue Aufgabe hinzufügen"
+              maxlength="30"
+            />
+            <button class="button" type="button" id="button-add">
+              <img class="" id="icon-add" src="./icons/add.svg"/>
+            </button>
+          </div>
+        </div>
+        <!-- 1st items container -->
+        <div class="container" id="container-current-items">
+        </div>
+      </div>
+      <!-- 2nd items rect -->
+      <div class="rectangle" id="rectangle-completed-items">
+        <h2 id="h2">
+          <u>
+            Erledigte Aufgaben
+          </u>
+        </h2>
+        <!-- 2nd items container -->
+        <div class="container" id="container-completed-items">
+        </div>
+    </div>
+  </body>
+</html>
